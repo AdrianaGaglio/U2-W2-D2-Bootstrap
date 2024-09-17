@@ -16,16 +16,13 @@
         width: 130px;
       }
 
-      .sale-image {
+      .sale-image,
+      .welcome-summer-img {
         height: 150px;
       }
 
-      .welcome-summer-img {
-        height: 200px;
-      }
-
       .last-minute-img {
-        height: 100px;
+        height: 200px;
       }
 
       .review-user {
@@ -81,9 +78,11 @@
     </header>
     <main>
       <section class="container">
-        <div class="px-5 py-5 my-5 bg-body-tertiary rounded-3 border border-light-subtle shadow-sm">
-          <h1 class="display-2 text-body-secondary border-bottom border-1 border-secondary-subtle pb-3 mb-3 d-flex align-items-center">
-            Eveline-R<span class="badge text-body-secondary fw-lighter fs-5 p-0">— Feel The Freedom</span>
+        <div class="px-3 px-md-5 py-5 my-5 bg-body-tertiary rounded-3 shadow-sm text-center text-lg-start">
+          <h1
+            class="display-1 displa text-body-secondary border-bottom border-1 border-secondary-subtle d-flex justify-content-center justify-content-lg-start align-items-center pb-3 mb-3"
+          >
+            Eveline-R<span class="badge text-body-secondary fw-lighter fs-6 p-0">— Feel The Freedom</span>
           </h1>
           <p class="lead fst-italic fw-medium text-body-secondary mb-5">Scopri le destinazioni più calde del momento!</p>
           <button type="button" class="btn btn-info btn-lg px-5 text-light fw-bolder">Prenota ora</button>
@@ -91,7 +90,7 @@
       </section>
       <section class="container mb-5">
         <h3 id="saldi" class="mb-3">Saldi</h3>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
           <div class="col">
             <div class="card border border-2 border-info">
               <img src="./assets/imgs/img_01.jpg" class="card-img-top sale-image object-fit-cover" alt="..." />
@@ -142,7 +141,7 @@
               <img src="./assets/imgs/img_05.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -152,7 +151,7 @@
               <img src="./assets/imgs/img_06.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -162,7 +161,7 @@
               <img src="./assets/imgs/img_07.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -172,7 +171,7 @@
               <img src="./assets/imgs/img_08.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -182,7 +181,7 @@
               <img src="./assets/imgs/img_09.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -192,7 +191,7 @@
               <img src="./assets/imgs/img_10.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
                 <a href="#" class="btn btn-info fw-medium">Prenota</a>
               </div>
             </div>
@@ -202,11 +201,11 @@
       <section class="container d-none d-md-block mb-5">
         <h3 class="mb-3">Offerta del giorno</h3>
         <div class="row">
-          <div class="col col-8">
+          <div class="col col-md-6 col-lg-8">
             <img class="w-100 rounded-3 shadow-lg" src="./assets/imgs/img_11.jpg" alt="" />
           </div>
-          <div class="col col-4">
-            <h4 class="fs-1 fw-light text-wrap w-50">Fushifaru Maldives</h4>
+          <div class="col col-md-6 col-lg-4">
+            <h4 class="fs-1 fw-light w-50">Fushifaru Maldives</h4>
             <p class="font-monospace mb-3">15.01.2021 - 31.01.2021</p>
             <p class="fs-5 fw-light w-50">Ville a partire da <span class="lead">500€</span>, non fartele sfuggire!</p>
             <span class="badge rounded-pill text-bg-dark">Best offer</span>
@@ -215,7 +214,7 @@
       </section>
       <section class="container mb-5">
         <h3 id="last-minute" class="mb-3">Last Minute</h3>
-        <div class="row row-cols-6">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
           <div class="col">
             <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_12.jpg" alt="" />
           </div>
@@ -237,60 +236,51 @@
         </div>
       </section>
       <section class="container">
-        <h3 id="recensioni" class="mb-3">Dicono di noi</h3>
-        <div class="row">
-          <div class="col-1">
-            <img class="review-user" src="https://placehold.co/400" alt="" />
+        <h3 id="recensioni" class="mb-3 text-center text-md-start">Dicono di noi</h3>
+        <div class="row g-md-0 mb-3">
+          <div class="col-2 col-md-1 pt-2">
+            <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
           </div>
-          <div class="col-11">
+          <div class="col-10 col-md-11">
             <h5>Username</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, hic cupiditate modi minus veniam at consequatur tenetur qui. Aliquam optio minima
               non voluptatibus autem labore quis vero omnis nisi accusantium aspernatur hic provident excepturi ipsum iste dolores veniam, nemo sunt mollitia
-              quae perferendis atque nesciunt saepe ipsam! Libero tenetur asperiores earum laudantium molestias dolorum harum delectus modi ea atque voluptates
-              fugiat ipsa, optio laborum officia deleniti. Dolorum quam odio dolores exercitationem veritatis, unde facere ducimus eligendi illo culpa dolore
-              iusto id eos odit tempore, error quod molestias nisi explicabo illum, vitae vero natus ratione! Mollitia voluptatem repellendus corporis quibusdam
-              officiis.
+              quae perferendis atque nesciunt saepe ipsam!
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-1">
-            <img class="review-user" src="https://placehold.co/400" alt="" />
+        <div class="row g-md-0 mb-3">
+          <div class="col-2 col-md-1 pt-2">
+            <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
           </div>
-          <div class="col-11">
+          <div class="col-10 col-md-11">
             <h5>Username</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, hic cupiditate modi minus veniam at consequatur tenetur qui. Aliquam optio minima
               non voluptatibus autem labore quis vero omnis nisi accusantium aspernatur hic provident excepturi ipsum iste dolores veniam, nemo sunt mollitia
-              quae perferendis atque nesciunt saepe ipsam! Libero tenetur asperiores earum laudantium molestias dolorum harum delectus modi ea atque voluptates
-              fugiat ipsa, optio laborum officia deleniti. Dolorum quam odio dolores exercitationem veritatis, unde facere ducimus eligendi illo culpa dolore
-              iusto id eos odit tempore, error quod molestias nisi explicabo illum, vitae vero natus ratione! Mollitia voluptatem repellendus corporis quibusdam
-              officiis.
+              quae perferendis atque nesciunt saepe ipsam!
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-1">
-            <img class="review-user" src="https://placehold.co/400" alt="" />
+        <div class="row g-md-0 mb-3">
+          <div class="col-2 col-md-1 pt-2">
+            <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
           </div>
-          <div class="col-11">
+          <div class="col-10 col-md-11">
             <h5>Username</h5>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, hic cupiditate modi minus veniam at consequatur tenetur qui. Aliquam optio minima
               non voluptatibus autem labore quis vero omnis nisi accusantium aspernatur hic provident excepturi ipsum iste dolores veniam, nemo sunt mollitia
-              quae perferendis atque nesciunt saepe ipsam! Libero tenetur asperiores earum laudantium molestias dolorum harum delectus modi ea atque voluptates
-              fugiat ipsa, optio laborum officia deleniti. Dolorum quam odio dolores exercitationem veritatis, unde facere ducimus eligendi illo culpa dolore
-              iusto id eos odit tempore, error quod molestias nisi explicabo illum, vitae vero natus ratione! Mollitia voluptatem repellendus corporis quibusdam
-              officiis.
+              quae perferendis atque nesciunt saepe ipsam!
             </p>
           </div>
         </div>
       </section>
       <div class="container-fluid bg-dark">
         <footer class="py-3 my-4 text-center">
-          <button class="btn btn-outline-secondary">Contattaci</button>
-          <p class="text-center text-light">© 2024 Company, Inc</p>
+          <button class="btn btn-outline-secondary mb-3">Contattaci</button>
+          <p class="text-center text-light">© 2021 Kalina Travel LTD. All Rights Reserved.</p>
         </footer>
       </div>
     </main>
