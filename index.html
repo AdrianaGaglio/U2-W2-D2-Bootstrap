@@ -17,17 +17,14 @@
       }
 
       .sale-image,
-      .welcome-summer-img {
-        height: 150px;
-      }
-
+      .welcome-summer-img,
       .last-minute-img {
-        height: 200px;
+        height: 150px;
       }
 
       .review-user {
         width: 50px;
-        height: 50px;
+        max-height: 50px;
       }
     </style>
   </head>
@@ -89,110 +86,135 @@
         </div>
       </section>
       <section class="container mb-5">
-        <h3 id="saldi" class="mb-3">Saldi</h3>
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-          <div class="col">
-            <div class="card border border-2 border-info">
-              <img src="./assets/imgs/img_01.jpg" class="card-img-top sale-image object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+        <div class="d-flex gap-1 align-items-center mb-3">
+          <h3 id="saldi" class="mb-0">Saldi</h3>
+          <a class="btn btn-light ms-auto" data-bs-toggle="collapse" href="#collapseSaldi" role="button" aria-expanded="false" aria-controls="collapseSaldi">
+            +
+          </a>
+        </div>
+        <div class="collapse" id="collapseSaldi">
+          <div class="card card-body border-0 p-0">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+              <div class="col">
+                <div class="card border border-2 border-info">
+                  <img src="./assets/imgs/img_01.jpg" class="card-img-top img-fluid sale-image object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col d-flex">
-            <div class="card border border-2 border-info">
-              <img src="./assets/imgs/img_02.jpg" class="card-img-top sale-image object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col d-flex">
+                <div class="card border border-2 border-info">
+                  <img src="./assets/imgs/img_02.jpg" class="card-img-top img-fluid sale-image object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col d-flex">
-            <div class="card border border-2 border-info">
-              <img src="./assets/imgs/img_03.jpg" class="card-img-top sale-image object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col d-flex">
+                <div class="card border border-2 border-info">
+                  <img src="./assets/imgs/img_03.jpg" class="card-img-top img-fluid sale-image object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col d-md-none d-lg-block">
-            <div class="card border border-2 border-info">
-              <img src="./assets/imgs/img_04.jpg" class="card-img-top sale-image object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col d-md-none d-lg-block">
+                <div class="card border border-2 border-info">
+                  <img src="./assets/imgs/img_04.jpg" class="card-img-top img-fluid sale-image object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, similique!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="container mb-5">
-        <h3 id="welcome-summer" class="mb-3">Welcome Summer</h3>
-        <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 g-3">
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_05.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+        <div class="d-flex gap-1 align-items-center mb-3">
+          <h3 id="welcome-summer" class="mb-0">Welcome Summer</h3>
+          <a
+            class="btn btn-light ms-auto"
+            data-bs-toggle="collapse"
+            href="#collapseWelcomeSummer"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseWelcomeSummer"
+          >
+            +
+          </a>
+        </div>
+        <div class="collapse" id="collapseWelcomeSummer">
+          <div class="card card-body border-0 p-0">
+            <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 g-3">
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_05.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_06.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_06.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_07.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_07.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_08.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_08.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_09.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_09.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card border-0 shadow-lg">
-              <img src="./assets/imgs/img_10.jpg" class="card-img-top welcome-summer-img object-fit-cover" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Titolo</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
-                <a href="#" class="btn btn-info fw-medium">Prenota</a>
+              <div class="col">
+                <div class="card border-0 shadow-lg">
+                  <img src="./assets/imgs/img_10.jpg" class="card-img-top img-fluid welcome-summer-img object-fit-cover" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Titolo</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, nulla!</p>
+                    <a href="#" class="btn btn-info fw-medium">Prenota</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -202,7 +224,7 @@
         <h3 class="mb-3">Offerta del giorno</h3>
         <div class="row">
           <div class="col col-md-6 col-lg-8">
-            <img class="w-100 rounded-3 shadow-lg" src="./assets/imgs/img_11.jpg" alt="" />
+            <img class="w-100 rounded-3 shadow-lg h-100 object-fit-cover" src="./assets/imgs/img_11.jpg" alt="" />
           </div>
           <div class="col col-md-6 col-lg-4">
             <h4 class="fs-1 fw-light w-50">Fushifaru Maldives</h4>
@@ -216,28 +238,41 @@
         <h3 id="last-minute" class="mb-3">Last Minute</h3>
         <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_12.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_12.jpg" alt="" />
           </div>
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_13.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_13.jpg" alt="" />
           </div>
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_14.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_14.jpg" alt="" />
           </div>
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_15.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_15.jpg" alt="" />
           </div>
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_16.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_16.jpg" alt="" />
           </div>
           <div class="col">
-            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm" src="./assets/imgs/img_17.jpg" alt="" />
+            <img class="w-100 last-minute-img object-fit-cover rounded-3 shadow-sm img-fluid" src="./assets/imgs/img_17.jpg" alt="" />
           </div>
         </div>
       </section>
       <section class="container">
         <h3 id="recensioni" class="mb-3 text-center text-md-start">Dicono di noi</h3>
-        <div class="row g-md-0 mb-3">
+        <div class="row g-md-1 mb-3">
+          <div class="col-2 col-md-1 pt-2">
+            <img class="review-user rounded-circle d-block mx-auto border border-2 border-info img-fluid" src="https://placehold.co/400" alt="" />
+          </div>
+          <div class="col-10 col-md-11">
+            <h5>Username</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, hic cupiditate modi minus veniam at consequatur tenetur qui. Aliquam optio minima
+              non voluptatibus autem labore quis vero omnis nisi accusantium aspernatur hic provident excepturi ipsum iste dolores veniam, nemo sunt mollitia
+              quae perferendis atque nesciunt saepe ipsam!
+            </p>
+          </div>
+        </div>
+        <div class="row g-md-1 mb-3">
           <div class="col-2 col-md-1 pt-2">
             <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
           </div>
@@ -250,20 +285,7 @@
             </p>
           </div>
         </div>
-        <div class="row g-md-0 mb-3">
-          <div class="col-2 col-md-1 pt-2">
-            <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
-          </div>
-          <div class="col-10 col-md-11">
-            <h5>Username</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, hic cupiditate modi minus veniam at consequatur tenetur qui. Aliquam optio minima
-              non voluptatibus autem labore quis vero omnis nisi accusantium aspernatur hic provident excepturi ipsum iste dolores veniam, nemo sunt mollitia
-              quae perferendis atque nesciunt saepe ipsam!
-            </p>
-          </div>
-        </div>
-        <div class="row g-md-0 mb-3">
+        <div class="row g-md-1 mb-3">
           <div class="col-2 col-md-1 pt-2">
             <img class="review-user rounded-circle d-block mx-auto border border-2 border-info" src="https://placehold.co/400" alt="" />
           </div>
@@ -278,8 +300,8 @@
         </div>
       </section>
       <div class="container-fluid bg-dark">
-        <footer class="py-3 my-4 text-center">
-          <button class="btn btn-outline-secondary mb-3">Contattaci</button>
+        <footer class="py-4 text-center">
+          <button class="btn btn-outline-secondary mb-4">Contattaci</button>
           <p class="text-center text-light">© 2021 Kalina Travel LTD. All Rights Reserved.</p>
         </footer>
       </div>
