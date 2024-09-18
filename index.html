@@ -28,14 +28,24 @@
       }
 
       #tripsCounter {
-        position: fixed;
+        bottom: 5rem;
+        right: 1rem;
+      }
+
+      #removeCards {
         bottom: 2rem;
         right: 1rem;
-        display: none;
+      }
+
+      #tripsCounter,
+      #removeCards {
+        position: fixed;
+        /* display: none; */
       }
 
       @media screen and (min-width: 768px) {
-        #tripsCounter {
+        #tripsCounter,
+        #removeCards {
           display: block;
         }
       }
@@ -389,6 +399,7 @@
       </div>
     </div>
     <button id="tripsCounter" type="button" class="btn btn-info btn-lg p-1 rounded-pill fw-bolder fs-6">Conta viaggi</button>
+    <button id="removeCards" type="button" class="btn btn-info btn-lg p-1 rounded-pill fw-bolder fs-6">Rimuovi cards</button>
     <div class="container-fluid bg-dark">
       <footer class="py-4 text-center">
         <button class="btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#contattaci">Contattaci</button>
