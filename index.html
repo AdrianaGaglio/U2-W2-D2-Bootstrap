@@ -348,10 +348,37 @@
         </div>
       </section>
     </main>
+    <!-- Vertically centered modal -->
+    <div class="modal fade" id="contattaci" tabindex="-1" aria-labelledby="contattaciLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title fs-5" id="contattaciLabel">Contattaci</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Indirizzo email</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com" />
+              </div>
+              <div class="mb-3">
+                <label for="yourMessage" class="form-label">Scrivi qui il tuo messaggio</label>
+                <textarea class="form-control" id="yourMessage" rows="3"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-info" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-info">Invia</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <button id="tripsCounter" type="button" class="btn btn-outline-info btn-lg px-5 fw-bolder">Conta viaggi</button>
     <div class="container-fluid bg-dark">
       <footer class="py-4 text-center">
-        <button class="btn btn-outline-secondary mb-4">Contattaci</button>
+        <button class="btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#contattaci">Contattaci</button>
         <p class="text-center text-light">© 2021 Kalina Travel LTD. All Rights Reserved.</p>
       </footer>
     </div>
