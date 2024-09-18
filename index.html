@@ -26,6 +26,19 @@
         width: 50px;
         max-height: 50px;
       }
+
+      #tripsCounter {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        display: none;
+      }
+
+      @media screen and (min-width: 768px) {
+        #tripsCounter {
+          display: block;
+        }
+      }
     </style>
   </head>
 
@@ -375,7 +388,7 @@
         </div>
       </div>
     </div>
-    <button id="tripsCounter" type="button" class="btn btn-outline-info btn-lg px-5 fw-bolder">Conta viaggi</button>
+    <button id="tripsCounter" type="button" class="btn btn-info btn-lg p-1 rounded-pill fw-bolder fs-6">Conta viaggi</button>
     <div class="container-fluid bg-dark">
       <footer class="py-4 text-center">
         <button class="btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#contattaci">Contattaci</button>

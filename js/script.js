@@ -7,3 +7,12 @@ tripsCounter.addEventListener("click", (event) => {
   const numOfTripsAvailable = numOnSale + numWelcomeSummer + numDailyOffer + numLastMinute;
   alert("Numero viaggi disponibili: " + numOfTripsAvailable);
 });
+
+const hotBadge = () => {
+  const summerTrips = document.querySelectorAll("#collapseWelcomeSummer .row .card");
+  summerTrips.forEach((trip) => {
+    const badge = document.createElement("span");
+    badge.classList.add("badge");
+    trip.style.position = "relative";
+  });
+};
